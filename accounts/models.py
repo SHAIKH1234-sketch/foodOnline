@@ -33,10 +33,10 @@ class UserManager(BaseUserManager):
         user.save()
         return user
 class User(AbstractBaseUser):
-    Resturant=1
+    vendor=1
     Customer=2
     ROLE_CHOICE=(
-    (Resturant,'Resturant'),
+    (vendor,'vendor'),
     (Customer,'Customer'),
     )
     first_name=models.CharField(max_length=50)
